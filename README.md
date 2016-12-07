@@ -52,7 +52,7 @@ You can create a new OpenShift application using the web console or by running t
 
 Pointing `oc new-app` at source code kicks off a chain of events, for our example run:
 
-        $ oc new-app https://github.com/openshift/nodejs-ex -l name=myapp
+        $ oc new-app https://github.com/mesutucar/nodejs-ex -l name=myapp
 
 The tool will inspect the source code, locate an appropriate image on DockerHub, create an ImageStream for that image, and then create the right build configuration, deployment configuration and service definition.
 
@@ -62,7 +62,7 @@ The tool will inspect the source code, locate an appropriate image on DockerHub,
 
 We can also [create new apps using OpenShift template files](https://docs.openshift.com/enterprise/3.0/dev_guide/new_app.html#specifying-a-template). Clone the demo app source code from [GitHub repo](https://github.com/openshift/nodejs-ex) (fork if you like).
 
-        $ git clone https://github.com/openshift/nodejs-ex
+        $ git clone https://github.com/mesutucar/nodejs-ex
 
 Looking at the repo, you'll notice two files in the openshift/template directory:
 
